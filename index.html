@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<div></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"/>
+    <title>Color</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+    <div>
+       <div class="about"><p>With this site, you can easily convert RGB to Minecraft RGB. How it works: you simply divide one of the RGB values by 255 and get the RGB that Minecraft works with.</p></div>
+    </div>
+    <br>
+    <div>
+       <div class="about"><p>This site was written by</p></div>
+       <div class="link"><a href="https://discord.gg/nahvass4TU" target="_blanc">The Oni Project</a></div>
+       <div class="about"><p>you can visit</p></div>
+       <div class="link"><a href="https://discord.gg/nahvass4TU" target="_blanc">our Discord.</a></div>
+    </div>
+    <br>
+    <input class="input" type="number" id="r" maxlength="3" placeholder="Red"> <span class="result" id="result1">0.000</span> 
+    <button class="button-copy" onclick="copyToClipboard('r')">Copy</button>
+    <br>
+    <input class="input" type="number" id="g" maxlength="3" placeholder="Green"> <span class="result" id="result2">0.000</span> 
+    <button class="button-copy" onclick="copyToClipboard('g')">Copy</button>
+    <br>
+    <input class="input" type="number" id="b" maxlength="3" placeholder="Blue"> <span class="result" id="result3">0.000</span> 
+    <button class="button-copy" onclick="copyToClipboard('b')">Copy</button>
+    <br>
+    <button class="button" onclick="func()">Calculate</button>
+</body>
+</html>
